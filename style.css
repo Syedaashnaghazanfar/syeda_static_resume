@@ -1,0 +1,232 @@
+body{
+    background-color: rgb(250, 132, 85);
+    margin: 0;
+    padding: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #9c47e2, #fa65d5, #f57b56, #d2d461, #72b6e4);
+    
+}
+
+.container{
+    background-color: #f5f0ed; /* Light background for contrast */
+    padding: 60px;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    animation: slide-in 2s ease-out, glow 9s infinite alternate;
+    top: 20%;
+    overflow: hidden;
+} 
+
+
+          /* glowing effect around resume */
+
+@keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(-300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(10);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 90px rgba(240, 92, 92, 0.918);
+    }
+    to {
+      box-shadow: 0 0 90px rgba(248, 63, 78, 0.7);
+    }
+  }
+
+img.picture{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%; 
+  margin-bottom: 40px;
+  border: 4px solid #e9845c;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  animation: beat 3s infinite alternate;
+}
+
+#picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* animation for beats effect */
+@keyframes beat {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(43, 39, 30, 0.973);
+  }
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(37, 30, 9, 0.8);
+  }
+}
+
+   /* editing for personal information */
+#personal-information {
+  background-color: rgb(248, 179, 179); 
+  color: black; 
+  padding: 20px; 
+  margin-bottom: 30px;
+  
+}
+
+#personal-information .bold {
+  border: 1px solid black;     
+  padding: 5px 10px;           
+  display: flex;  
+  align-items: center; 
+  justify-content: center;   
+  background-color: rgb(247, 174, 105);    
+  font-family: cursive;
+  margin-bottom: 40px;
+}
+
+#personal-information .forinformation{
+  border: 1px solid black;     
+  padding: 10px 10px;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+   /* editing for education */
+
+   #education {
+    background-color: rgb(243, 170, 144); 
+    color: black; 
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #education .bold2 {
+    border: 1px solid black;     
+    padding: 5px 10px;           
+    display: flex;  
+    align-items: center; 
+    justify-content: center;   
+    background-color: rgb(247, 133, 105);    
+    font-family: cursive;
+    margin-bottom: 30px;
+  }
+
+  #education .foreducation{
+    border: 1px solid black;     
+    padding: 10px 10px;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* editing for skills */
+
+  #skills {
+    background-color:rgb(248, 179, 179); 
+    color: black; 
+    padding: 20px;
+    margin-bottom: 30px;
+    
+  }
+  
+  #skills .bold3 {
+    border: 1px solid black;     
+    padding: 5px 10px;           
+    display: flex;  
+    align-items: center; 
+    justify-content: center;   
+    background-color:rgb(247, 174, 105); 
+    font-family: cursive;
+    margin-bottom: 30px;
+  }
+
+  #skills .forskills{
+    border: 1px solid black;     
+    padding: 10px 10px;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+ #skills .forskills h2 {
+  font-family: sans-serif;
+  color: rgb(78, 34, 4);
+  display: flex;
+  align-items: last baseline;
+  justify-content: last baseline;
+}
+
+/* editing for work experience */
+
+#work-experience {
+  background-color:  rgb(243, 170, 144); 
+  color: black; 
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#work-experience .bold4 {
+  border: 1px solid black;     
+  padding: 5px 10px;           
+  display: flex;  
+  align-items: center; 
+  justify-content: center;   
+  background-color: rgb(247, 133, 105);    
+  font-family: cursive;
+  margin-bottom: 30px;
+}
+
+#work-experience .forexperience{
+  border: 1px solid black;     
+  padding: 10px 10px;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+ 
+button {
+  margin-top: 5px; 
+  padding: 15px 50px; 
+  background-color: #e05252;
+  color: white; 
+  letter-spacing: 4px;
+  border: 1px solid black; 
+  border-radius: 25px; 
+  cursor: pointer; 
+  font-size: 18px; 
+  font-family: 'Arial', sans-serif; 
+  display: block; 
+  width: fit-content; 
+  margin-left: auto; 
+  margin-right: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 3.1); 
+  transition: background-color 0.2s ease; 
+}
+
+button:hover {
+  background-color: #b94040; 
+}
+
+.textone{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  position: absolute;
+  top: 3%;
+  font-size: 15px;
+  letter-spacing: 3px ;
+}
+
+.button{
+  margin-right: 160px;
+  
+}
