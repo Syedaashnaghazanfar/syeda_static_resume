@@ -1,0 +1,210 @@
+body{
+    background-color: rgb(250, 132, 85);
+    margin: 0;
+    padding: 7%;
+    background: linear-gradient(45deg, #9c47e2, #fa65d5, #f57b56, #d2d461, #72b6e4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#inputs {
+    background-color: #fdfcfd; 
+    padding: 60px;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    animation: slide-in 2s ease-out, glow 9s infinite alternate;
+    top: 20%;
+    overflow: hidden; 
+}
+@keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateY(-300px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(10);
+    }
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 90px rgba(240, 92, 92, 0.918);
+    }
+    to {
+      box-shadow: 0 0 90px rgba(248, 63, 78, 0.7);
+    }
+  }
+
+  h1 {
+    position: absolute;
+    top: 3%;
+  }
+
+  fieldset {
+    border: 2px solid #18050f;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    background-color: #eba281 ;
+    font-size: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 2.1); 
+    margin-bottom: 30px;
+  }
+  
+
+  button {
+    margin-top: 5px; 
+    padding: 15px 200px; 
+    background-color: #fc9494;
+    color: rgb(36, 23, 23); 
+    letter-spacing: 4px;
+    border: 1px solid black; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    font-family: 'Arial', sans-serif; 
+    display: block; 
+    width: fit-content; 
+    margin-left: auto; 
+    margin-right: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 3.1); 
+    transition: background-color 0.2s ease-out; 
+  }
+  
+  button:hover {
+    background-color: #df5c5c; 
+  }
+
+  #display {
+    background-color: white;
+    margin: 130px;
+    padding: 20px;
+    width: 100%;
+    max-width: 850px;
+    border-radius: 60px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    top: 220%;
+    position: absolute;
+    outline: none;
+  }
+
+
+
+.container {
+    background-color: #f5f0ed; 
+    padding: 60px;
+    width: 100%;
+    max-width: 730px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    animation: glow 9s infinite alternate;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 90px rgba(240, 92, 92, 0.918);
+    }
+    to {
+      box-shadow: 0 0 90px rgba(248, 63, 78, 0.7);
+    }
+}
+
+#personal-information {
+  background-color: rgb(248, 179, 179); 
+  color: black; 
+  padding: 20px; 
+  margin-bottom: 30px;
+}
+
+#education {
+  background-color: rgb(243, 170, 144); 
+  color: black; 
+  padding: 20px;
+    margin-bottom: 30px;
+} 
+
+#skills {
+  background-color: rgb(243, 170, 144); 
+  color: black; 
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#work-experience {
+  background-color:  rgb(248, 179, 179); 
+  color: black; 
+  padding: 20px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+      font-size: 1.5em;
+  }
+  h2 {
+      font-size: 1.2em;
+  }
+  p, li {
+      font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  h1 {
+      font-size: 1.75em;
+  }
+  h2 {
+      font-size: 1.4em;
+  }
+  p, li {
+      font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  h1 {
+      font-size: 2em;
+  }
+  h2 {
+      font-size: 1.6em;
+  }
+  p, li {
+      font-size: 1.2em;
+  }
+}
+
+h2 {
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-family: cursive;
+  font-size: 25px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 2.1); 
+  margin-bottom: 40px;
+  margin: 20px;
+  padding: 10px;
+}
+
+#centre {
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+textarea {
+  background-color: rgb(243, 170, 144);
+}
+
+#sharable-link {
+  position: absolute;
+  top: 397%;
+}
